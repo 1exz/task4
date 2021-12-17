@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ViewChild,Input } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-app';
+someMethods(ev:any){
+  console.log(ev,"and go to some text")
 }
+}
+
